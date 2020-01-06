@@ -1,6 +1,6 @@
-import 'package:eggs/pages/home.page.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
+import 'home.page.dart';
 
 class SplashPage extends StatelessWidget {
   Future delay(context) async {
@@ -9,10 +9,11 @@ class SplashPage extends StatelessWidget {
           milliseconds: 3000,
         ), () {
       Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HomePage(),
-          ));
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomePage(),
+        ),
+      );
     });
   }
 
@@ -44,7 +45,7 @@ class SplashPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
-          )
+          ),
         ],
       ),
     );
